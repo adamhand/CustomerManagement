@@ -14,12 +14,12 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class WebUtils {
     public static <T> T fillBean(HttpServletRequest request, Class<T> clazz){
+        T bean = null;
         try {
-            T bean = clazz.newInstance();
+            bean = clazz.newInstance();
 
             BeanUtils.populate(bean, request.getParameterMap());
 
-            return bean;
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
@@ -27,5 +27,6 @@ public class WebUtils {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+        return bean;
     }
 }

@@ -14,11 +14,11 @@ import java.util.List;
 public class Page {
     QueryRunner qr = new QueryRunner(C3P0Utils.getDataSource());
 
-    public PageBean<Customer> findAdd(int pageCode, int pageRecords){
+    public PageBean<Customer> findAll(int pageCode, int pageRecords){
+        PageBean<Customer> pb = new PageBean<>();
+        pb.setPageCode(pageCode);
+        pb.setPageRecords(pageRecords);
         try {
-            PageBean<Customer> pb = new PageBean<>();
-            pb.setPageCode(pageCode);
-            pb.setPageRecords(pageRecords);
 
             String sql = "select count(*) from t_customer";
 
@@ -31,19 +31,18 @@ public class Page {
 
             pb.setBeanList(listBean);
 
-            return pb;
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return pb;
     }
 
     public PageBean<Customer> query (Customer customer, int pageCode, int pageRecords){
+        PageBean<Customer> pb = new PageBean<>();
+        pb.setPageCode(pageCode);
+        pb.setPageRecords(pageRecords);
+
         try {
-
-            PageBean<Customer> pb = new PageBean<>();
-            pb.setPageCode(pageCode);
-            pb.setPageRecords(pageRecords);
-
             StringBuilder cntSql = new StringBuilder("select count(*) from t_customer");
             StringBuilder whereSql = new StringBuilder(" where 1=1 ");
             List<Object> params = new ArrayList<>();
@@ -81,12 +80,12 @@ public class Page {
             params.add((pageCode - 1)*pageRecords);
             params.add(pageRecords);
 
-            List<Customer> beanList = qr.query(sql.append(whereSql).append(limitSql).toString(), new ScalarHandler<>(Customer.class), params.toArray());
+            List<Customer> beanList = qr.query(sql.append(whereSql).append(limitSql).toString(), new BeanListHandler<>(Customer.class), params.toArray());
             pb.setBeanList(beanList);
 
-            return pb;
         }catch (Exception e){
             throw new RuntimeException(e);
         }
+        return pb;
     }
 }

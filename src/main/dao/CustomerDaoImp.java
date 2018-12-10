@@ -37,11 +37,13 @@ public class CustomerDaoImp implements CustomerDao{
     @Override
     public Customer findCustomerById(String id) {
         String sql = "select * from t_customer where id=?";
+        Customer customer = new Customer();
         try {
-            return qr.query(sql, new BeanHandler<Customer>(Customer.class), id);
+            customer = qr.query(sql, new BeanHandler<Customer>(Customer.class), id);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return customer;
     }
 
     @Override
