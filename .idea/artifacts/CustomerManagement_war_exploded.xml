@@ -6,6 +6,13 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CustomerManagement" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.1" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/CustomerManagement/META-INF/MANIFEST.MF" />
