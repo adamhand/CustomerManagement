@@ -8,6 +8,7 @@ import service.CustomerService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
 public class CustomerServlet extends BaseServlet{
@@ -84,5 +85,45 @@ public class CustomerServlet extends BaseServlet{
         return "";
     }
 
+    public String query(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
+        Customer customer = WebUtils.fillBean(request, Customer.class);
 
+        customer = encoding(customer);
+
+        int pc = getPc(request);
+        int pr = 10;
+
+        PageBean<Customer> pb = cs.query(customer, pc, pr);
+        pb.setUrl(getUrl(request));
+
+        request.setAttribute("pb", pb);
+
+        return "";
+    }
+
+    private Customer encoding(Customer customer) throws UnsupportedEncodingException {
+        String name = customer.getName();
+        String gender = customer.getGender();
+        String phone = customer.getPhone();
+        String email = customer.getEmail();
+
+        if(name != null && !name.trim().isEmpty()){
+            name = new String(name.getBytes("ISO-8859-1"), "utf-8");
+            customer.setName(name);
+        }
+        if(gender != null && !gender.trim().isEmpty()){
+            gender = new String(gender.getBytes("ISO-8859-1"), "utf-8");
+            customer.setGender(gender);
+        }
+        if(phone != null && !phone.trim().isEmpty()){
+            phone = new String(phone.getBytes("ISO-8859-1"), "utf-8");
+            customer.setPhone(phone);
+        }
+        if(email != null && !email.trim().isEmpty()){
+            email = new String(email.getBytes("ISO-8859-1"), "utf-8");
+            customer.setEmail(email);
+        }
+
+        return customer;
+    }
 }
