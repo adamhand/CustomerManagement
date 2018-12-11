@@ -22,7 +22,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("msg", "恭喜，成功添加客户！");
 
-        return "";
+        return "/msg.jsp";
     }
 
     public String preEdit(HttpServletRequest request, HttpServletResponse response){
@@ -31,7 +31,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("customer", customer);
 
-        return "";
+        return "/edit.jsp";
     }
 
     public String editCustomer(HttpServletRequest request, HttpServletResponse response){
@@ -40,7 +40,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("msg", "恭喜，修改客户信息成功！");
 
-        return "";
+        return "/msg.jsp";
     }
 
     public String deleteCustomer(HttpServletRequest request, HttpServletResponse response){
@@ -49,7 +49,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("msg", "恭喜，删除客户信息成功！");
 
-        return "";
+        return "/msg.jsp";
     }
 
     private int getPc(HttpServletRequest request){
@@ -82,7 +82,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("pb", pb);
 
-        return "";
+        return "/list.jsp";
     }
 
     public String query(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
@@ -98,7 +98,7 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("pb", pb);
 
-        return "";
+        return "/list.jsp";
     }
 
     private Customer encoding(Customer customer) throws UnsupportedEncodingException {
