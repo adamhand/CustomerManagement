@@ -6,50 +6,60 @@ import domain.Customer;
 import domain.PageBean;
 import service.CustomerService;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
 public class CustomerServlet extends BaseServlet{
     private CustomerService cs = new CustomerService();
 
-    public String addCustomer(HttpServletRequest request, HttpServletResponse response){
+    public String addCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Customer customer = WebUtils.fillBean(request, Customer.class);
-        customer.setId(UUID.randomUUID().toString());
+        customer.setId(UUID.randomUUID().toString().substring(0, 4));
 
         cs.addCustomer(customer);
 
         request.setAttribute("msg", "恭喜，成功添加客户！");
 
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+
+        return "";
     }
 
-    public String preEdit(HttpServletRequest request, HttpServletResponse response){
+    public String preEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         Customer customer = cs.findCustomerById(id);
 
         request.setAttribute("customer", customer);
 
-        return "/edit.jsp";
+        request.getRequestDispatcher("/edit.jsp").forward(request, response);
+
+        return "";
     }
 
-    public String editCustomer(HttpServletRequest request, HttpServletResponse response){
+    public String editCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Customer customer = WebUtils.fillBean(request, Customer.class);
         cs.editCustomer(customer);
 
         request.setAttribute("msg", "恭喜，修改客户信息成功！");
 
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+
+        return "";
     }
 
-    public String deleteCustomer(HttpServletRequest request, HttpServletResponse response){
+    public String deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         cs.deleteCustomerById(id);
 
         request.setAttribute("msg", "恭喜，删除客户信息成功！");
 
-        return "/msg.jsp";
+        request.getRequestDispatcher("/msg.jsp").forward(request, response);
+
+        return "";
     }
 
     private int getPc(HttpServletRequest request){
@@ -73,7 +83,7 @@ public class CustomerServlet extends BaseServlet{
         return contextPath + servletPath + "?" + queryString;
     }
 
-    public String findAll(HttpServletRequest request, HttpServletResponse response){
+    public String findAll(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int pc = getPc(request);
         int pr = 10;
 
@@ -82,10 +92,12 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("pb", pb);
 
-        return "/list.jsp";
+        request.getRequestDispatcher("/list.jsp").forward(request, response);
+
+        return "";
     }
 
-    public String query(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
+    public String query(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Customer customer = WebUtils.fillBean(request, Customer.class);
 
         customer = encoding(customer);
@@ -98,7 +110,9 @@ public class CustomerServlet extends BaseServlet{
 
         request.setAttribute("pb", pb);
 
-        return "/list.jsp";
+        request.getRequestDispatcher("/list.jsp").forward(request, response);
+
+        return "";
     }
 
     private Customer encoding(Customer customer) throws UnsupportedEncodingException {

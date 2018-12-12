@@ -15,6 +15,7 @@
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

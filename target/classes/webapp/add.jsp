@@ -11,7 +11,12 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<body style="text-align: center;">
+<h1 align="center">客户关系管理系统</h1>
+<a href="<c:url value='/add.jsp'/>">添加客户</a>
+<a href="<c:url value='/CustomerServlet?method=findAll'/>">查询客户</a>
+<a href="<c:url value='/query.jsp'/>">高级搜索</a>
+
 <h3 align="center">添加客户</h3>
 <form action="<c:url value='/CustomerServlet'/>" method="post">
     <input type="hidden" name="method" value="addCustomer">
