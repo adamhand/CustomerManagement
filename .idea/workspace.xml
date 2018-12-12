@@ -7,34 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d2351d3-2a48-4912-8c15-427449fefb79" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CustomerManagement_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CustomerManagement_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CustomerManagement.iml" afterPath="$PROJECT_DIR$/CustomerManagement.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/c3p0-config.xml" afterPath="$PROJECT_DIR$/src/c3p0-config.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/commons/Page.java" afterPath="$PROJECT_DIR$/src/main/commons/Page.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/CustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/controller/CustomerServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/domain/PageBean.java" afterPath="$PROJECT_DIR$/src/main/domain/PageBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/add.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/edit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/msg.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/msg.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/query.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/query.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/t_customer.sql" afterPath="$PROJECT_DIR$/src/t_customer.sql" />
       <change beforePath="$PROJECT_DIR$/target/CustomerManagement.war" afterPath="$PROJECT_DIR$/target/CustomerManagement.war" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/commons/Page.class" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/commons/Page.class" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/controller/CustomerServlet.class" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/controller/CustomerServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/edit.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/list.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/list.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/edit.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/list.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/list.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commons/Page.class" afterPath="$PROJECT_DIR$/target/classes/commons/Page.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/controller/CustomerServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/PageBean.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/edit.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/edit.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/list.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/list.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/main/webapp/query.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/main/webapp/query.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/query.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/WEB-INF/classes/webapp/query.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerManagement/query.jsp" afterPath="$PROJECT_DIR$/target/CustomerManagement/query.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/query.jsp" afterPath="$PROJECT_DIR$/target/classes/main/webapp/query.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/query.jsp" afterPath="$PROJECT_DIR$/target/classes/webapp/query.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/controller/CustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="929">
-              <caret line="107" column="38" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,15 +83,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/query.jsp">
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="286">
+              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="64" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="msg.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/msg.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Utils/WebUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c3p0-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDaoImp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/dao/CustomerDaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/main/Utils/BeanHandler.java" />
         <option value="$PROJECT_DIR$/src/main/commons/PageBean.java" />
         <option value="$PROJECT_DIR$/src/main/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/main/dao/CustomerDaoImp.java" />
         <option value="$PROJECT_DIR$/src/main/Utils/WebUtils.java" />
         <option value="$PROJECT_DIR$/src/main/Utils/BaseServlet.java" />
         <option value="$USER_HOME$/.m2/settings.xml" />
@@ -166,11 +209,12 @@
         <option value="$PROJECT_DIR$/src/main/controller/CustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/domain/PageBean.java" />
         <option value="$PROJECT_DIR$/src/main/commons/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/msg.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/query.jsp" />
+        <option value="$PROJECT_DIR$/src/main/dao/CustomerDaoImp.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/msg.jsp" />
       </list>
     </option>
   </component>
@@ -252,7 +296,7 @@
               <item name="CustomerManagement" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerManagement" type="b2602c69:ProjectViewProjectNode" />
@@ -264,10 +308,7 @@
             <path>
               <item name="CustomerManagement" type="b2602c69:ProjectViewProjectNode" />
               <item name="CustomerManagement" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -490,12 +531,12 @@
       <workItem from="1544412529986" duration="16799000" />
       <workItem from="1544491793200" duration="1838000" />
       <workItem from="1544495437751" duration="5116000" />
-      <workItem from="1544530043341" duration="13862000" />
+      <workItem from="1544530043341" duration="21526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37615000" />
+    <option name="totallyTimeSpent" value="45279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -578,13 +619,6 @@
     </entry>
     <entry file="jar://D:/ProSoftware/Java/jdk1.8.0_181/src.zip!/java/lang/StringCoding.java" />
     <entry file="jar://D:/ProSoftware/Java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/dao/CustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/c3p0/c3p0/0.9.1/c3p0-0.9.1.jar!/com/mchange/v2/sql/SqlUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -602,16 +636,6 @@
             <marker date="1544430985679" expanded="true" signature="1510:3178" ph="{...}" />
             <marker date="1544430985679" expanded="true" signature="3203:3210" ph="{}" />
             <marker date="1544430985679" expanded="true" signature="3223:3344" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Utils/WebUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,14 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://J:/ProfessionalSoftware/Java/jdk1.8.0_102/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -749,54 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1892">
-          <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/dao/CustomerDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/commons/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/msg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -813,25 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/domain/PageBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -840,34 +793,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/query.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/commons/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-858">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/dao/CustomerDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#881#882#0" expanded="false" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/msg.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controller/CustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="929">
-          <caret line="107" column="38" lean-forward="false" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/query.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/Utils/WebUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="460">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

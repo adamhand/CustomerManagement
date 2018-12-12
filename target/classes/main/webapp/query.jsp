@@ -22,7 +22,7 @@
     <input type="hidden" name="method" value="query">
     <table border="0" align="center" width="40%" style="margin-center: 100px">
         <tr>
-            <td width="40px">客户名称</td>
+            <td width="100px">客户名称</td>
             <td width="40%">
                 <input type="text" name="name">
             </td>
