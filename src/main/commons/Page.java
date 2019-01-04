@@ -22,8 +22,16 @@ public class Page {
 
             String sql = "select count(*) from t_customer";
 
-            int totalNum = (int)qr.query(sql, new ScalarHandler<>());
-            pb.setTotalRecords(totalNum);
+            //不要按照下面那种写法，否则会出现Long转int异常。Number可以将包装类转换成基本类。
+            Number number=(Number) qr.query(sql,new ScalarHandler<>());
+            int tr=number.intValue();
+            int totalPage = tr / pageRecords;
+            totalPage = tr % pageRecords == 0? totalPage : totalPage + 1;
+            pb.setTotalRecords(tr);
+            pb.setTotalPage(totalPage);
+
+//            int totalNum = (int)qr.query(sql, new ScalarHandler<>());
+//            pb.setTotalRecords(totalNum);
 
             sql = "select * from t_customer order by name limit ?,?";
             Object[] params = {(pageCode - 1)*pageRecords, pageRecords};
@@ -71,8 +79,15 @@ public class Page {
                 params.add("%"+email+"%");
             }
 
-            int totalNum = (int)qr.query(cntSql.append(whereSql).toString(), new ScalarHandler<>(), params.toArray());
+            Number number = (Number)qr.query(cntSql.append(whereSql).toString(), new ScalarHandler<>(), params.toArray());
+            int totalNum = number.intValue();
+            int totalPage = totalNum / pageRecords;
+            totalPage = totalNum % pageRecords == 0? totalPage : totalPage + 1;
             pb.setTotalRecords(totalNum);
+            pb.setTotalPage(totalPage);
+
+//            int totalNum = (int)qr.query(cntSql.append(whereSql).toString(), new ScalarHandler<>(), params.toArray());
+//            pb.setTotalRecords(totalNum);
 
             StringBuilder sql = new StringBuilder("select * from t_customer ");
             StringBuilder limitSql = new StringBuilder(" limit ?,?");
