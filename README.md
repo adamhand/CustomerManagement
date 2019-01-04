@@ -9,8 +9,10 @@
 
 运用知识：
 
-- 数据库基本查询
-- 数据库连接池c3p0
+- Maven
+- Tomcat
+- Mysql数据库基本查询
+- Mysql数据库连接池c3p0
 - 运用dbutil.jar包一键封装表单数据到bean对象中
 - 利用dbutils.jar包简化对数据库增、删、改、查的代码
 - JavaWeb三层框架的分离
@@ -21,7 +23,7 @@
 
 # c3p0连接池配合QueryRunner的使用
 
-##简介
+## 简介
 ### c3p0
 实际开发中“获得连接”或“释放资源”是非常消耗系统资源的两个过程，为了解决此类性能问题，通常情况我们采用连接池技术，来共享连接Connection。这样我们就不需要每次都创建连接、释放连接了，这些操作都交给了连接池。c3p0就是这样一个连接池。
 
@@ -29,7 +31,7 @@
 
 目前使用它的开源项目有：Spring、Hibernate等。
 
-###QueryRunner
+### QueryRunner
 QueryRunner是dbutils提供的类。Commons DbUtils是Apache组织提供的一个对JDBC进行简单封装的开源工具类库，提供数据库操作的简单实现，包含增、删、改、查、批量以及事务等操作。
 
 DbUtils有两个核心对象：QueryRunner类和ResultSetHandler接口。
