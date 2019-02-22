@@ -1,7 +1,7 @@
 package controller;
 
-import Utils.BaseServlet;
-import Utils.WebUtils;
+import utils.BaseServlet;
+import utils.WebUtils;
 import domain.Customer;
 import domain.PageBean;
 import service.CustomerService;

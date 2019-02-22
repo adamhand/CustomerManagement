@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 
 import org.apache.commons.beanutils.BeanUtils;

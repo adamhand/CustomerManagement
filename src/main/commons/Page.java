@@ -1,6 +1,6 @@
 package commons;
 
-import Utils.C3P0Utils;
+import utils.C3P0Utils;
 import domain.Customer;
 import domain.PageBean;
 import org.apache.commons.dbutils.QueryRunner;

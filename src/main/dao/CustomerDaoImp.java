@@ -1,6 +1,6 @@
 package dao;
 
-import Utils.C3P0Utils;
+import utils.C3P0Utils;
 import domain.Customer;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;

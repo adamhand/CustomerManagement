@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 

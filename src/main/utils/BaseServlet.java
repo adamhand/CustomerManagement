@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
